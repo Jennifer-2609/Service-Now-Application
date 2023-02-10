@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2">
+
+<parameter name="url" value="https://dev106809.service-now.com/" />
+<parameter name="username" value="admin" />
+<parameter name="password" value="$@sv75QQnwFZ" />
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="servicenowapplication.OrderingMobile"/> 
+     <class name="servicenowapplication.CreatenewProposal"/>
+      <class name="servicenowapplication.CreateNewCaller"/>
+      <class name="servicenowapplication.Fillmandatoryfields"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
